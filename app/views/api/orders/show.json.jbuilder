@@ -1,0 +1,1 @@
+json.partial! @order, partial: 'api/orders/order', as: :order

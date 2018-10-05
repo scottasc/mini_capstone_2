@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: 
+  price: 
+  description: 
+  stock: 
+  supplier_id: 1
+
+two:
+  name: 
+  price: 
+  description: 
+  stock: 
+  supplier_id: 1
