@@ -8,41 +8,57 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="main.css">
+
     <title>Products</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
-    <h1>Products</h1>
 
-      <h2><a href="https://tsicloud.com/wp-content/uploads/2017/06/cloud.jpg">Cloud</a></h2>
-      <h2>Description: a truly fine cloud, yes</h2>
-        <h3><img src="https://tsicloud.com/wp-content/uploads/2017/06/cloud.jpg"></h3>
-      <h2>Price: $100</h2>
-      <h2>Supplier</h2>
-        <h3>John</h3>
-          <ul>
-            <li>Email: john@supplier.com</li>
-            <li>Phone: unknown</li>
-          </ul>
+    <nav class="navbar navbar-expand-lg navbar-darK bg-dark">
+  <a class="navbar-brand" href="#">Clouds</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-      <h2><a href="https://tsicloud.com/wp-content/uploads/2017/06/cloud.jpg">Cloud 2</a></h2>
-      <h2>Description: a truly fine cloud, yes</h2>
-      <h2>Price: $200</h2>
-      <h2>Supplier</h2>
-        <h3>John</h3>
-          <ul>
-            <li>Email: john@supplier.com</li>
-            <li>Phone: unknown</li>
-          </ul>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
 
-      <h2><a href="https://tsicloud.com/wp-content/uploads/2017/06/cloud.jpg">Cloud 3</a></h2>
-      <h2>Description: a truly fine cloud, yes</h2>
-      <h2>Price: $300</h2>
-      <h2>Supplier</h2>
-        <h3>John</h3>
-          <ul>
-            <li>Email: john@supplier.com</li>
-            <li>Phone: unknown</li>
-          </ul>
+<h1>Products</h1>
+
+    <div class="container">
+      <div class="row">
+  
+      </div>
+    </div>
 
 
 
@@ -62,3 +78,20 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
+
+<template id="product-card">
+  
+      <div class="col-md-4">
+        <div class="card" style="width: 20rem; height: auto;">
+          <img class="card-img-top" src="" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><a class="product-title" href="https://tsicloud.com/wp-content/uploads/2017/06/cloud.jpg">Cloud</a></h5>
+            <h6 class="card-subtitle mb-2 text-muted">Price: <span class="price"></span></h6>
+            <p class="card-text">Description: <span class="description"></span></p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+      </div>
+
+</template>
