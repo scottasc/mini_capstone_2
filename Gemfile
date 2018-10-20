@@ -31,6 +31,8 @@ gem 'jwt'
 
 gem 'http'
 
+gem 'rack-cors', require: 'rack/cors'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
